@@ -14,10 +14,10 @@ Clone The repo and run the terraform module.
      To Intialize Terraform:
      terrform init
  
-     To Create ECS:
+     To Create VPC:
      terraform apply -auto-approve
  
-     To Destroy ECS:
+     To Destroy VPC:
      terraform destroy -auto-approve
      
 Git Ref:
