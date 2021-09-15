@@ -7,7 +7,7 @@ resource "aws_default_security_group" "default" {
     for_each = var.ports
 
     content {
-      description = "k8s security group"
+      description = "Allow-${ingress.value}"
       from_port   = ingress.value
       to_port     = ingress.value
       protocol    = var.protocol_type
@@ -16,7 +16,7 @@ resource "aws_default_security_group" "default" {
   }
 
   ingress {
-    description = "k8s security group"
+    description = "Allow All Unassigned Ports"
     from_port   = 0
     to_port     = 65535
     protocol    = var.protocol_type
