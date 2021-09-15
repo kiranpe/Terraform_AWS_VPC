@@ -5,7 +5,7 @@ locals {
 
   common_tags = {
     CreatedBy   = "Kiran Peddineni"
-    Environment = "Non-Prod"
+    Environment = "Dev"
     Maintainer  = "Kiran Peddineni"
   }
 
